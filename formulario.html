@@ -1,0 +1,190 @@
+<!DOCTYPE html> 
+<html lang="es" >   
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Formulario</title>
+        <link rel="stylesheet" href="css/estilo.css"/>
+        <link rel="stylesheet" href="css/navegacion.css"/>
+</head>
+<body>
+    <header class="site-header">
+    <h1 class="titulo-cabecera">Mi primera web de Lenguaje de Marcas</h1>
+    <nav class="navegacion">
+        <a class="enlace-menu" href="index.html">Inicio</a>
+        <a class="enlace-menu" href="horario.html">Horario</a>
+        <a class="enlace-menu" href="formulario.html">Formulario</a>
+        <details class="menu-desplegable">
+            <summary class="enlace-menu">Ejercicio 1</summary>
+            <div class="submenu">
+                <a class="enlace-menu" href="Ej1.1_texto.html">Ejercicio 1.1</a>
+                <a class="enlace-menu" href="Ej1.2_texto.html">Ejercicio 1.2</a>
+                <a class="enlace-menu" href="Ej1.3_texto.html">Ejercicio 1.3</a>
+            </div>
+        </details>
+        <details class="menu-desplegable">
+            <summary class="enlace-menu">Ejercicio 2</summary>
+            <div class="submenu">
+                <a class="enlace-menu" href="Ej2.1_listas.html">Ejercicio 2.1: Listas</a>
+                <a class="enlace-menu" href="Ej2.2_menu-listas.html">Ejercicio 2.2: Menús</a>
+                <a class="enlace-menu" href="Ej2.3_bloques.html">Ejercicio 2.3: Bloques</a>
+            </div>
+        </details>
+        <details class="menu-desplegable">
+            <summary class="enlace-menu">Ejercicio 3</summary>
+            <div class="submenu">
+                <a class="enlace-menu" href="Ej3.1_class_id.html">Ejercicio 3.1: Class e ID</a>
+                <a class="enlace-menu" href="Ej3.2_iframes.html">Ejercicio 3.2: Iframes</a>
+            </div>
+        </details>
+        <details class="menu-desplegable">
+            <summary class="enlace-menu">JavaScript</summary>
+            <div class="submenu">
+                <a class="enlace-menu" href="JS_introduccion.html">Introducción</a>
+                <a class="enlace-menu" href="JS_calculadora.html">Calculadora</a>
+                <a class="enlace-menu" href="JS_piedra_papel_tijera.html">Piedra, papel o tijera</a>
+            </div>
+        </details>
+    </nav>
+    </header>
+    <main class="contenedor">
+        <h1>Formulario de contacto</h1>
+        <form>
+            <fieldset>
+                
+                <legend>Informacion personal</legend>
+                <p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required />
+                </p>
+
+                <p>
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password"  />
+                </p>
+
+                <p>
+                    <label for="email">Correo electronico:</label>
+                    <input type="email" id="email" name="email" />
+                </p>
+
+                <p>
+                    <label for="telefono">Telefono:</label>
+                    <input type="tel" id="telefono" name="telefono" />
+                </p>
+
+                <p>
+                    <label for="web">Página web:</label>
+                    <input type="url" id="web" name="web" />
+                </p>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Fechas y horas</legend>
+                    <p>
+                        <label for="fecha">Fecha:</label>
+                        <input type="date" id="fecha" name="fecha" />
+                    </p>
+
+                    <p>
+                        <label for="hora">Hora:</label>
+                        <input type="time" id="hora" name="hora" />
+                    </p>
+
+                    <p>
+                        <label for="fechaHora">Fecha y hora:</label>
+                        <input type="datetime-local" id="fechaHora" name="fechaHora" />
+                    </p>
+
+                    <p>
+                        <label for="mes">Mes:</label>
+                        <input type="month" id="mes" name="mes" />
+                    </p>
+
+                    <p>
+                        <label for="semana">Semana:</label>
+                        <input type="week" id="semana" name="semana" />
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Valores numéricos</legend>
+                    <p>
+                        <label for="edad">Edad:</label>
+                        <input type="number" id="edad" name="edad" min="0" max="120">
+                    </p>
+                    <p>
+                        <label for="valor">Nivel</label>
+                        <input type="range" id="valor" name="valor" min="0" max="100">
+                        
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Botones</legend>
+                    <p>
+                        <input class="boton" type="submit" value="Enviar">
+                        <input class="boton boton-borrar" type="reset" value="Borrar">
+                    </p>
+                </fieldset>
+                <fieldset>
+                <legend>Opciones</legend>
+                <p>Selecciona una opción:</p>
+          <input class="radio" type="radio" id="opcion1" name="opcion" value="1" />
+          <label for="opcion1">Opción 1</label>
+
+          <br/>
+
+          <input class="radio" type="radio" id="opcion2" name="opcion" value="2" />
+          <label for="opcion2">Opción 2</label>
+
+          <br/>
+
+          <input class="radio" type="radio" id="opcion3" name="opcion" value="3" />
+          <label for="opcion3">Opción 3</label>
+        
+        
+          <!-- CHECKBOX -->
+          <p>Selecciona tus aficiones:</p>
+
+          <input
+            class="casilla"
+            type="checkbox"
+            id="deporte"
+            name="aficiones"
+            value="deporte"
+          />
+
+          <label for="deporte">Deporte</label>
+          <br />
+
+          <input class="casilla" type="checkbox" id="musica" name="aficiones" value="musica" />
+          <label for="musica">Música</label>
+          <br />
+
+          <input
+            class="casilla"
+            type="checkbox"
+            id="informatica"
+            name="aficiones"
+            value="informatica"
+          />
+
+          <label for="informatica">Informática</label>
+        </fieldset>
+
+
+            
+        </form>
+    </main>
+    <p></p>
+    <!--FOOTER PIE PAGINA-->
+    <footer>
+        <fieldset class="pie-datos">
+                <p>Correo: <a class="enlace-correo" href="mailto:jorgecontentod@gmail.com">jorgecontentod@gmail.com</a></p>
+                <p>Instituto: CIFP Virgen de Gracia</p>
+                <p>Dirección: Paseo de San Gregorio, 82-84. 13500. Puertollano (Ciudad Real)</p>
+                </fieldset>
+    </footer>
+</body>
+</html>  

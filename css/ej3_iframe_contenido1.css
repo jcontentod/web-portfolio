@@ -1,0 +1,22 @@
+.encuadre {
+    border: 2px blue solid;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+h2 {
+    color: red;
+    font-size: 15px;
+}
+p {
+    font-size: 30px;
+    font-family: Verdana;
+}
+fieldset {
+    border: 2px blue solid;
+    background-color:rgb(203, 198, 198);
+}

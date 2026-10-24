@@ -1,0 +1,58 @@
+body {
+    padding: 20px;
+}
+
+.tabla1 {
+    border: 2px solid darkblue; 
+    border-spacing: 10px;      
+    margin: 0 auto;
+}
+
+.tabla1 caption {
+    font-style: italic;
+}
+
+.tabla1 th {
+    padding: 4px 6px;
+    text-align: center;
+}
+.tabla1 td {
+    border: 2px solid darkblue;
+    padding: 15px 25px;
+    text-align: center;
+}
+
+.tabla2 {
+    border-collapse: collapse;
+    border: 2px solid goldenrod;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.tabla2 caption {
+    font-style: italic;
+}
+
+.thead2 {
+    border: 2px solid goldenrod;
+    background-color: #E0E0E0; 
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tabla2 th, .tabla2 td {
+    border: 2px solid goldenrod;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.filaverde td {
+    background-color: #9ACD32; 
+}
+
+.filagris td{
+    background-color: #E0E0E0; 
+}
