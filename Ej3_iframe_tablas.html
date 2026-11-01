@@ -3,71 +3,73 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/estilo.css">
-        <link rel="stylesheet" href="css/ej3_iframe_contenido3.css">
         <title>Ejemplo de tablas</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap">
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="css/ej1_3_tablas.css">
     </head>
-    <body>
-    <table class="tabla1">
-        <caption>Tabla prueba 1</caption>
-        <thead>
-            <tr>
-                <th>columna 1</th>
-                <th>columna 2</th>
-                <th>columna 3</th>
-                <th>columna 4</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>col1</td>
-                <td colspan="2">col2</td>
-                <td rowspan="2">col3</td>
-            </tr>
-            <tr>
-                <td>colum1</td>
-                <td>colum2</td>
-                <td>colum4</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <br/>
-
-    <table class="tabla2">
-        <caption>Tabla prueba 2</caption>
-        <thead>
-            <tr class="thead2">
-                <th>columna 1</th>
-                <th>columna 2</th>
-                <th>columna 3</th>
-                <th>columna 4</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="filaverde">
-                <td>col1</td>
-                <td colspan="2">col2</td>
-                <td>col3</td>
-            </tr>
-            <tr class="filagris">
-                <td>colum1</td>
-                <td rowspan="2">colum2</td>
-                <td>colum3</td>
-                <td>colum4</td>
-            </tr>
-            <tr class="filaverde">
-                <td>column1</td>
-                <td>column3</td>
-                <td>column4</td>
-            </tr>
-            <tr class="filagris">
-                <td>colu1</td>
-                <td>colu2</td>
-                <td>colu3</td>
-                <td>colu4</td>
-            </tr>
-        </tbody>
-    </table>
+    <body class="pagina-iframe">
+        <main class="tablas">
+            <table class="tabla1">
+                <caption>Tabla prueba 1</caption>
+                <thead>
+                    <tr>
+                        <th>columna 1</th>
+                        <th>columna 2</th>
+                        <th>columna 3</th>
+                        <th>columna 4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>col1</td>
+                        <td colspan="2">col2</td>
+                        <td rowspan="2">col3</td>
+                    </tr>
+                    <tr>
+                        <td>colum1</td>
+                        <td>colum2</td>
+                        <td>colum4</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="tabla2">
+                <caption>Tabla prueba 2</caption>
+                <thead>
+                    <tr class="thead2">
+                        <th>columna 1</th>
+                        <th>columna 2</th>
+                        <th>columna 3</th>
+                        <th>columna 4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="filaverde">
+                        <td>col1</td>
+                        <td colspan="2">col2</td>
+                        <td>col3</td>
+                    </tr>
+                    <tr class="filagris">
+                        <td>colum1</td>
+                        <td rowspan="2">colum2</td>
+                        <td>colum3</td>
+                        <td>colum4</td>
+                    </tr>
+                    <tr class="filaverde">
+                        <td>column1</td>
+                        <td>column3</td>
+                        <td>column4</td>
+                    </tr>
+                    <tr class="filagris">
+                        <td>colu1</td>
+                        <td>colu2</td>
+                        <td>colu3</td>
+                        <td>colu4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
     </body>
 </html>

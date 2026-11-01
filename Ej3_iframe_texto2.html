@@ -3,33 +3,30 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ejercicio 2</title>
+        <title>Ejemplo de texto 2</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap">
         <link rel="stylesheet" href="css/estilo.css">
-        <link rel="stylesheet" href="css/ej3_iframe_contenido2.css">
+        <link rel="stylesheet" href="css/ej1_2_enlaces.css">
     </head>
-    <body>
-        <header>
-                <h4>Esto es un encabezado <del>h4</del></h4> 
-                <h2><mark><b>h2</b></mark></h2>  
-        </header>
-
-        <main>  
-            <p><a href="#capitulo4" class="caja">Ir a capitulo 4</a></p>
-            <pre>esto es un texto<br/>preformateado</pre>
-
-            <p>
-                Este hipervínvculo va a <b>google</b><a href="https://www.google.com" class="caja-google">Ir a Google</a>
+    <body class="pagina-iframe">
+        <main class="pagina-flor">
+            <header class="encabezado-flor">
+                <h4>Esto es un encabezado <del>h4</del></h4>
+                <h2><mark><b>h2</b></mark></h2>
+            </header>
+            <p><a href="#capitulo4" class="caja">Ir a capítulo 4</a></p>
+            <pre class="texto-flor">esto es un texto
+preformateado</pre>
+            <p class="texto-flor">
+                Este hipervínculo va a <b>google</b>
+                <a href="https://www.google.com" class="caja-google">Ir a Google</a>
             </p>
-
-            
+            <section class="seccion-capitulo">
+                <p id="capitulo4" class="caja-blanca">hipervínculo en la misma página</p>
+                <p><b>Esto es el Capítulo 4</b></p>
+            </section>
         </main>
-        
-        <footer>
-            <div class="seccion-capitulo">
-                <p id="capitulo4"class="caja-blanca">hipervinculo en la misma pagina</p>
-                <p><b>Esto es el Capitulo 4</b></p>
-            </div>
-
-        </footer>
     </body>
 </html>

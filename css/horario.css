@@ -1,0 +1,117 @@
+/* ==========================================================================
+   horario.css: tabla del horario semanal
+   ========================================================================== */
+
+.tabla-horario-contenedor {
+    overflow-x: auto;
+    border: 1px solid var(--borde);
+    border-radius: var(--radio-pequeno);
+}
+
+.horario-tabla {
+    width: 100%;
+    min-width: 760px;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.horario-tabla caption {
+    padding: 14px;
+    color: var(--azul-noche);
+    font-family: var(--fuente-titulos);
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.horario-tabla th,
+.horario-tabla td {
+    padding: 14px 10px;
+    border-right: 1px solid var(--blanco);
+    border-bottom: 1px solid var(--blanco);
+    text-align: center;
+}
+
+.horario-tabla thead th {
+    background-color: var(--azul-noche);
+    color: var(--blanco);
+}
+
+/* La columna de horas se queda fija al desplazar la tabla en pantallas pequeñas */
+.horario-tabla tbody th {
+    position: sticky;
+    left: 0;
+    min-width: 96px;
+    background-color: #f2f6f4;
+    color: var(--azul-noche);
+    white-space: nowrap;
+}
+
+.horario-tabla tbody td {
+    min-width: 120px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: filter var(--transicion);
+}
+
+.horario-tabla tbody td:hover {
+    filter: saturate(1.5) brightness(0.96);
+}
+
+/* Cada asignatura tiene siempre el mismo color */
+.asig-hardware {
+    background-color: #dcefe7;
+    color: #19513f;
+}
+
+.asig-itinerario {
+    background-color: #e4eccb;
+    color: #46531a;
+}
+
+.asig-sostenibilidad {
+    background-color: #d3efd2;
+    color: #245526;
+}
+
+.asig-marcas {
+    background-color: #dceff8;
+    color: #1e526e;
+}
+
+.asig-bases-datos {
+    background-color: #e0e2f7;
+    color: #363c86;
+}
+
+.asig-proyecto {
+    background-color: #eee0f5;
+    color: #5c2f77;
+}
+
+.asig-digitalizacion {
+    background-color: #d6eef0;
+    color: #17565c;
+}
+
+.asig-ingles {
+    background-color: #f9e0ea;
+    color: #7e2a4b;
+}
+
+.asig-sistemas {
+    background-color: #f8dfdc;
+    color: #7a3027;
+}
+
+.asig-redes {
+    background-color: #fce8d5;
+    color: #754315;
+}
+
+.horario-tabla .recreo {
+    background-color: var(--menta);
+    color: var(--azul-noche);
+    font-size: 1rem;
+    letter-spacing: 0.12em;
+}

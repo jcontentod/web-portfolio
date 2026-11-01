@@ -1,0 +1,110 @@
+/* ==========================================================================
+   formulario.css: formulario de contacto
+   ========================================================================== */
+
+.rejilla-formulario {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+fieldset {
+    min-width: 0;
+    margin: 0;
+    padding: 14px 18px;
+    border: 1px solid var(--borde);
+    border-radius: var(--radio-pequeno);
+    transition: border-color var(--transicion), box-shadow var(--transicion);
+}
+
+/* El grupo que se está rellenando se resalta */
+fieldset:focus-within {
+    border-color: var(--verde);
+    box-shadow: var(--sombra-suave);
+}
+
+legend {
+    padding: 0 6px;
+    color: var(--azul-noche);
+    font-family: var(--fuente-titulos);
+    font-weight: 700;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 0 0 12px;
+}
+
+.campo label {
+    font-weight: 600;
+}
+
+.campo input {
+    width: 100%;
+    padding: 9px 10px;
+    border: 1px solid #a9bbb5;
+    border-radius: var(--radio-pequeno);
+    background-color: #fbfdfc;
+    transition: border-color var(--transicion), background-color var(--transicion);
+}
+
+.campo input:hover {
+    border-color: var(--verde);
+}
+
+.campo input:user-invalid {
+    border-color: var(--coral);
+    background-color: #fdf0ee;
+}
+
+.campo input[type="range"] {
+    padding: 0;
+    border: 0;
+    background: none;
+    accent-color: var(--verde);
+}
+
+.opcion {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.opcion input {
+    accent-color: var(--verde);
+}
+
+.grupo-titulo {
+    margin: 0 0 6px;
+    font-weight: 600;
+}
+
+.grupo-titulo:not(:first-of-type) {
+    margin-top: 14px;
+}
+
+.acciones-formulario {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.mensaje-formulario {
+    margin: 14px 0 0;
+    color: var(--verde-oscuro);
+    font-weight: 600;
+}
+
+.mensaje-formulario:empty {
+    display: none;
+}
+
+@media (max-width: 760px) {
+    .rejilla-formulario {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}

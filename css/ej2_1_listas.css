@@ -1,0 +1,36 @@
+/* Ejercicio 2.1: listas ordenadas y no ordenadas */
+
+.listas {
+    padding: 20px;
+}
+
+.banner {
+    margin-bottom: 15px;
+    padding: 6px;
+    border-radius: 12px;
+    background-color: #51d1f6;
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+.lista-no-ordenada {
+    list-style-type: circle;
+}
+
+.sublista-cuadrado {
+    list-style-type: square;
+}
+
+.lista-ordenada {
+    list-style-type: decimal;
+}
+
+.sublista-alfabetica {
+    list-style-type: lower-latin;
+}
+
+.sublista-romana {
+    list-style-type: lower-roman;
+}

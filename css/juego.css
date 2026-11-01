@@ -1,0 +1,133 @@
+/* ==========================================================================
+   juego.css: diseño del juego piedra, papel o tijera (Tema 3)
+   ========================================================================== */
+
+.opciones-juego {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    max-width: 520px;
+    margin: 18px auto;
+}
+
+.opcion-juego {
+    padding: 16px 8px;
+    border-radius: var(--radio);
+    background-color: var(--menta-claro);
+    color: var(--azul-noche);
+}
+
+.opcion-juego:hover {
+    background-color: var(--menta);
+    transform: translateY(-4px) scale(1.03);
+}
+
+.opcion-icono {
+    display: block;
+    font-size: clamp(2.2rem, 8vw, 3rem);
+    line-height: 1.2;
+}
+
+.marcador {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 0 auto 18px;
+}
+
+.marcador-dato {
+    flex: 0 1 130px;
+    padding: 8px;
+    border-radius: var(--radio-pequeno);
+    background-color: var(--azul-noche);
+    color: var(--blanco);
+    text-align: center;
+}
+
+.marcador-dato span {
+    display: block;
+    font-size: 0.8rem;
+}
+
+.marcador-dato strong {
+    color: var(--menta);
+    font-family: var(--fuente-titulos);
+    font-size: 1.5rem;
+}
+
+/* Resultado de la ronda: el color cambia según quién gane */
+.ronda {
+    max-width: 520px;
+    margin: 0 auto 16px;
+    padding: 16px;
+    border-left: 6px solid var(--borde);
+    border-radius: var(--radio-pequeno);
+    background-color: #f2f6f4;
+    text-align: center;
+}
+
+.ronda-victoria {
+    border-color: var(--verde);
+    background-color: #dcefe7;
+}
+
+.ronda-derrota {
+    border-color: var(--coral);
+    background-color: #f8dfdc;
+}
+
+.ronda-empate {
+    border-color: var(--ambar);
+    background-color: #fbeed6;
+}
+
+.ronda-animada {
+    animation: aparecer 0.35s ease;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(8px) scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.ronda-jugadas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.ronda-jugada {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.85rem;
+}
+
+.ronda-jugada strong {
+    font-size: 2.4rem;
+    line-height: 1.2;
+}
+
+.ronda-vs {
+    color: var(--texto-suave);
+    font-weight: 700;
+}
+
+.mensaje-juego {
+    margin: 8px 0 0;
+    color: var(--azul-noche);
+    font-family: var(--fuente-titulos);
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.reiniciar-juego {
+    text-align: center;
+}

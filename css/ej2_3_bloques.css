@@ -1,0 +1,61 @@
+/* Ejercicio 2.3: bloques div y texto en línea con span */
+
+.bloques {
+    padding: 20px;
+    background-image: url("../img/ej2_bloques.png");
+    background-size: cover;
+}
+
+.bloque1 {
+    margin-bottom: 15px;
+    padding: 20px 25px;
+    border-radius: 12px;
+    background-color: rgba(108, 122, 137, 0.92);
+    box-shadow: var(--sombra-suave);
+    color: #ffffff;
+}
+
+.bloque1 h2 {
+    margin-top: 0;
+    color: #ffffff;
+    font-size: 1.8em;
+    font-weight: normal;
+}
+
+.bloque1 p {
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+.bloque2 {
+    padding: 15px 20px;
+    border-radius: 12px;
+    background-color: rgba(226, 229, 163, 0.92);
+    box-shadow: var(--sombra-suave);
+    color: #000000;
+}
+
+.bloque2 p {
+    margin: 0;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+.subr-rosa {
+    padding: 1px 4px;
+    background-color: #e77ce7;
+}
+
+.black {
+    padding: 1px 4px;
+    border: 1px solid #00aa00;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.subr-blanco {
+    background-color: #ffffff;
+    color: black;
+    font-size: 1.2em;
+    font-style: italic;
+}

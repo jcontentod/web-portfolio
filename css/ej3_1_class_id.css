@@ -1,0 +1,55 @@
+/* Ejercicio 3.1: uso de class e id */
+
+.capitulos {
+    padding: 15px;
+}
+
+/* Las clases dan el estilo común de todos los capítulos */
+.capitulo {
+    margin: 0 0 15px;
+    padding: 8px;
+    background-image: url("../img/fondo.png");
+    background-position: center;
+    background-size: 44px;
+    color: white;
+    font-size: 1.1em;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 0 0 4px black, 0 0 8px black, 0 0 12px black;
+}
+
+.texto-capitulo {
+    margin: 0 0 15px;
+    padding: 15px;
+    font-size: 0.95em;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.cuadro-azul {
+    display: inline;
+    padding: 2px 4px;
+    border: 2px solid #3b2cc4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Los id dan a cada capítulo su estilo propio */
+#capitulo1 .texto-capitulo {
+    background-color: #d8fcd8;
+    color: black;
+}
+
+#capitulo2 .texto-capitulo {
+    margin-inline: 14px;
+    background-color: #ffd976;
+    color: black;
+}
+
+#capitulo3 .texto-capitulo {
+    margin-inline: 14px;
+    border-radius: 15px;
+    background-color: #3b2cc4;
+    color: white;
+}

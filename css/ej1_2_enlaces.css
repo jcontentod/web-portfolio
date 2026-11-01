@@ -1,0 +1,75 @@
+/* Ejercicio 1.2: hipervínculos y marcadores. También se usa en Ej3_iframe_texto2.html */
+
+.pagina-flor {
+    display: flex;
+    flex-direction: column;
+    min-height: 620px;
+    padding: 12px;
+    background-image: url("../img/flor.png");
+    background-position: center 30%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.encabezado-flor {
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2px 10px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.88);
+    text-align: center;
+}
+
+/* Fondo semitransparente para que el texto se lea sobre la flor */
+.texto-flor {
+    width: fit-content;
+    max-width: 100%;
+    padding: 2px 6px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.88);
+}
+
+.encabezado-flor h4 {
+    display: inline-block;
+    margin: 0;
+    color: red;
+    font-size: 20px;
+}
+
+.encabezado-flor h2 {
+    display: inline-block;
+    margin: 0;
+    font-size: 15px;
+}
+
+.caja {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: gold;
+    color: white;
+    text-decoration: none;
+}
+
+.caja-google {
+    padding: 2px 6px;
+    background-color: gold;
+    color: white;
+    text-decoration: none;
+}
+
+.seccion-capitulo {
+    width: 100%;
+    margin-top: auto;
+    padding: 15px;
+    border: 1px solid black;
+    background-color: #6495ed;
+}
+
+.caja-blanca {
+    width: fit-content;
+    max-width: 100%;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: white;
+}
