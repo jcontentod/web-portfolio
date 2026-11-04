@@ -1,4 +1,3 @@
-// Cierra los submenús al pulsar fuera de ellos o la tecla Escape
 const menus = document.querySelectorAll(".menu-desplegable");
 
 document.addEventListener("click", (evento) => {

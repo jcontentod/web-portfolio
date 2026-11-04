@@ -41,7 +41,6 @@ function mostrarRonda(jugador, maquina, mensaje, resultado) {
     document.getElementById("puntos-maquina").textContent = derrotas;
     document.getElementById("puntos-empates").textContent = empates;
 
-    // Se quita la clase y se fuerza el repintado para repetir la animación en cada ronda
     ronda.className = "ronda";
     void ronda.offsetWidth;
     ronda.classList.add(resultado, "ronda-animada");

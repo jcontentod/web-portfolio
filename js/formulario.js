@@ -7,7 +7,6 @@ nivel.addEventListener("input", () => {
     salidaNivel.textContent = nivel.value;
 });
 
-// La web es estática y no tiene servidor, así que los datos no se envían a ningún sitio
 formulario.addEventListener("submit", (evento) => {
     evento.preventDefault();
     mensajeFormulario.textContent = `Gracias, ${formulario.nombre.value}. Este formulario es una demostración y los datos no se guardan.`;

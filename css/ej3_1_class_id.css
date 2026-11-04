@@ -1,10 +1,6 @@
-/* Ejercicio 3.1: uso de class e id */
-
 .capitulos {
     padding: 15px;
 }
-
-/* Las clases dan el estilo común de todos los capítulos */
 .capitulo {
     margin: 0 0 15px;
     padding: 8px;
@@ -35,7 +31,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Los id dan a cada capítulo su estilo propio */
 #capitulo1 .texto-capitulo {
     background-color: #d8fcd8;
     color: black;

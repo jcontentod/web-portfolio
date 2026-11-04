@@ -1,7 +1,3 @@
-/* ==========================================================================
-   juego.css: diseño del juego piedra, papel o tijera (Tema 3)
-   ========================================================================== */
-
 .opciones-juego {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -55,7 +51,6 @@
     font-size: 1.5rem;
 }
 
-/* Resultado de la ronda: el color cambia según quién gane */
 .ronda {
     max-width: 520px;
     margin: 0 auto 16px;

@@ -1,5 +1,3 @@
-/* Ejercicio 1.3: tablas. También se usa en Ej3_iframe_tablas.html */
-
 .tablas {
     padding: 20px 8px;
     overflow-x: auto;
@@ -52,7 +50,6 @@
     background-color: #e0e0e0;
 }
 
-/* En móvil se reducen los espacios para que las tablas quepan sin desplazarlas */
 @media (max-width: 480px) {
     .tablas {
         padding: 14px 4px;

@@ -23,7 +23,6 @@ function operar(primerValor, segundoValor, signo) {
     }
 }
 
-// Quita los decimales falsos de las operaciones, como 0.1 + 0.2 = 0.30000000000000004
 function formatear(numero) {
     return Number.isFinite(numero) ? String(parseFloat(numero.toPrecision(MAX_DIGITOS))) : "Error";
 }
@@ -36,7 +35,6 @@ function escribir(valor) {
     }
 
     if (OPERADORES.includes(valor)) {
-        // Si ya hay una operación pendiente se resuelve primero: 2 + 3 + 4 = 9
         if (operacion !== null && !reemplazarPantalla) {
             calcular();
             if (pantalla.value === "Error") {
@@ -93,7 +91,6 @@ function borrar() {
     reemplazarPantalla = true;
 }
 
-// La calculadora también se puede usar con el teclado
 document.addEventListener("keydown", (evento) => {
     const tecla = evento.key;
 
