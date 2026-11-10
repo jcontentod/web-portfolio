@@ -1,3 +1,17 @@
+/* ==========================================================================
+   estilo.css: hoja global del portfolio
+   1. Variables
+   2. Base
+   3. Botones y enlaces
+   4. Contenedores comunes
+   5. Portada
+   6. Pie de página
+   7. Diseño adaptable
+   8. Accesibilidad
+   ========================================================================== */
+
+/* 1. Variables
+   ========================================================================== */
 :root {
     --azul-noche: #123447;
     --azul-medio: #1c5a6e;
@@ -23,6 +37,8 @@
     --transicion: 0.2s ease;
 }
 
+/* 2. Base
+   ========================================================================== */
 * {
     box-sizing: border-box;
 }
@@ -31,6 +47,7 @@ html {
     scroll-behavior: smooth;
 }
 
+/* El body es una columna flexible para que el pie quede siempre abajo */
 body {
     display: flex;
     flex-direction: column;
@@ -72,6 +89,8 @@ hr {
     background-color: var(--borde);
 }
 
+/* 3. Botones y enlaces
+   ========================================================================== */
 button,
 .boton {
     display: inline-block;
@@ -106,6 +125,8 @@ button:active,
     background-color: #a64333;
 }
 
+/* 4. Contenedores comunes
+   ========================================================================== */
 .contenedor {
     flex: 1 0 auto;
     width: min(1100px, 92%);
@@ -116,6 +137,7 @@ button:active,
     box-shadow: var(--sombra);
 }
 
+/* Indica a qué tema pertenece cada página */
 .miga {
     margin: 0 0 6px;
     color: var(--verde);
@@ -125,6 +147,7 @@ button:active,
     text-transform: uppercase;
 }
 
+/* Marco que separa cada ejercicio del diseño general */
 .ejercicio {
     margin-top: 18px;
     border: 1px solid var(--borde);
@@ -132,6 +155,7 @@ button:active,
     overflow: hidden;
 }
 
+/* Páginas que solo se muestran dentro de un iframe */
 .pagina-iframe {
     display: block;
     min-height: 0;
@@ -139,6 +163,8 @@ button:active,
     background: var(--blanco);
 }
 
+/* 5. Portada
+   ========================================================================== */
 .portada-intro {
     display: grid;
     grid-template-columns: 1fr minmax(220px, 0.7fr);
@@ -238,6 +264,8 @@ button:active,
     transform: translateY(-3px);
 }
 
+/* 6. Pie de página
+   ========================================================================== */
 .site-footer {
     padding: 24px 5%;
     background: linear-gradient(90deg, var(--azul-noche), var(--azul-medio));
@@ -257,6 +285,8 @@ button:active,
     color: var(--menta);
 }
 
+/* 7. Diseño adaptable
+   ========================================================================== */
 @media (max-width: 760px) {
     .contenedor {
         margin: 20px auto;
@@ -267,6 +297,8 @@ button:active,
     }
 }
 
+/* 8. Accesibilidad
+   ========================================================================== */
 :focus-visible {
     outline: 3px solid var(--ambar);
     outline-offset: 3px;
