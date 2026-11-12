@@ -1,16 +1,8 @@
-/* ==========================================================================
-   oscuro.css: tema oscuro del ejercicio "Modo oscuro"
-   Empieza desactivado (atributo disabled en el <link>) y se activa
-   o desactiva desde js/cambiarmodo.js
-   ========================================================================== */
-
-/* Fondo general de la página */
 body {
     background: #121212;
     color: white;
 }
 
-/* Cabecera, contenido principal y pie */
 .site-header,
 .site-footer,
 .contenedor {
@@ -22,7 +14,6 @@ body {
     box-shadow: 0 0 0 1px #2a2a2a;
 }
 
-/* Textos */
 h1,
 h2,
 h3,
@@ -42,7 +33,6 @@ hr {
     background-color: #333333;
 }
 
-/* Submenú de la navegación */
 .submenu {
     background-color: #1e1e1e;
 }
