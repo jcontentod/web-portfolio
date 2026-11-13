@@ -31,8 +31,7 @@
     border-collapse: collapse;
 }
 
-.tabla2 th,
-.tabla2 td {
+.tabla2 th, .tabla2 td {
     padding: clamp(6px, 2vw, 12px);
     border: 2px solid goldenrod;
     text-align: center;
@@ -68,8 +67,7 @@
         padding: 8px 5px;
     }
 
-    .tabla2 th,
-    .tabla2 td {
+    .tabla2 th, .tabla2 td {
         padding: 6px 3px;
     }
 }

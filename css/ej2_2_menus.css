@@ -12,8 +12,7 @@
     margin: 22px 0;
 }
 
-.horizontal,
-.vertical {
+.horizontal, .vertical {
     margin: 0;
     padding: 0;
     list-style-type: none;

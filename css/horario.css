@@ -20,8 +20,7 @@
     text-align: left;
 }
 
-.horario-tabla th,
-.horario-tabla td {
+.horario-tabla th, .horario-tabla td {
     padding: 14px 10px;
     border-right: 1px solid var(--blanco);
     border-bottom: 1px solid var(--blanco);

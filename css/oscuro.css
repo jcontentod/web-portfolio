@@ -3,9 +3,7 @@ body {
     color: white;
 }
 
-.site-header,
-.site-footer,
-.contenedor {
+.site-header, .site-footer, .contenedor {
     color: white;
     background: black;
 }
@@ -14,10 +12,7 @@ body {
     box-shadow: 0 0 0 1px #2a2a2a;
 }
 
-h1,
-h2,
-h3,
-p {
+h1, h2, h3, p {
     color: beige;
 }
 
